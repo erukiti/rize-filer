@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<meta charset="utf-8">
+	<title data-bind="text: title"></title>
+	<link rel="stylesheet" href="../style/index.css">
+<body>
+
+<div class="window">
+	<header class="toolbar toolbar-header">
+		<h1 class="title">環境設定</h1>
+	</header>
+
+	<div class="window-content">
+		<div class="pane-group">
+			<div class="pane-sm sidebar">
+				<nav class="nav-group">
+					<h5 class="nav-group-title">Preferences</h5>
+					<a class="nav-group-item active">
+						<span class="icon icon-home"></span>
+						Home
+					</a>
+					<span class="nav-group-item">
+						<span class="icon icon-download"></span>
+						Downloads
+					</span>
+				</nav>
+			</div>
+			<div class="pane">
+				<div class="padded-more">
+					<h1 data-bind="text: title"></h1>
+					<div><span>version: </span><span data-bind="text: version"></span></div>
+					<div>Copyright 2015 SASAKI, Shunsuke.</div>
+					<div>Apache Software License, version 2.0</div>
+					<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script src="./about.js"></script>
+</body>
+</html>

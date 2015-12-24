@@ -1,0 +1,15 @@
+<div style="display: flex; flex-direction: column; height: 773px" data-bind="event: {keydown: keydown, focus: focused, blur: blured}" tabindex="0">
+	<div style="">
+		<span data-bind="text: currentPath"></span>
+	</div>
+	<div style="overflow: auto; flex: 1 1 auto">
+		<table style="border-collapse: collapse" class="filer">
+			<tbody data-bind="foreach: files">
+				<tr data-bind="foreach: $parent.columns, css: {selective: isSlective}, attr: {this: $data}">
+					<td data-bind="component: {name: 'filer-item-' + $data, params: $parent}, event: {'dblclick': $parents[1].dblclick, click: $parents[1].click}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+

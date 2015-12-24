@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<meta charset="utf-8">
+	<title data-bind="text: title"></title>
+	<link rel="stylesheet" href="../style/index.css">
+<body data-bind="event: {keydown: ev, focus: bodyFocused}">
+
+<div class="window">
+	<header class="toolbar toolbar-header">
+		<h1 class="title" data-bind="text: title"></h1>
+	</header>
+
+	<div class="window-content">
+		<div class="pane-group" data-bind="foreach: panes">
+			<div data-bind="component: {name: name, params: {viewModel: @viewModel, opt: @opt}}, css: klass, attr: {id: id, this: this}">
+		</div>
+	</div>
+
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
